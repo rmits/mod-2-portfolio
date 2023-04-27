@@ -1,7 +1,7 @@
 :root {
     --dark: rgb(4, 6, 109);
     --light: white;
-    --alt: rgb(34, 112, 175);
+    --alt: rgb(6, 181, 212);
 }
 
 body {
@@ -14,9 +14,9 @@ body {
 header {
     background-color: var(--dark);
     color: var(--light);
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
-    border: 5px solid black;
+    border: 5px solid whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@ header {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 40px;
 }
 nav ul {
     display: flex;
@@ -41,7 +41,39 @@ nav a {
 }
 
 nav a::before {
-    content: '💣';
+    content: '🎐';
     display: inline-block;
+    margin: 2px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card img {
+    margin: 2%;
+}
+
+.card h2 {
+    background-color: var(--alt);
+    color: var(--light);
     margin: 5px;
+}
+
+.card ul {
+    background-color: var(--dark);
+    color: var(--alt);
+    text-decoration: none;
+    margin: 10px 15px;
+    font-size: 14px;
+    text-align: left;
 }

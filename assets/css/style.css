@@ -16,7 +16,6 @@ header {
     color: var(--light);
     font-size: 16px;
     text-align: center;
-    border: 5px solid whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,15 +47,17 @@ nav a::before {
 
 .card-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    transition: 1s;
     text-align: center;
+    border: 10px solid var(--alt);
+    margin: 10px 0px;
+    border-style: ridge;
 }
 
 .card img {
@@ -66,14 +67,20 @@ nav a::before {
 .card h2 {
     background-color: var(--alt);
     color: var(--light);
-    margin: 5px;
+    margin: 5px 100px;
 }
 
 .card ul {
     background-color: var(--dark);
     color: var(--alt);
     text-decoration: none;
-    margin: 10px 15px;
-    font-size: 14px;
+    margin: 10px 100px;
+    font-size: 18px;
     text-align: left;
+}
+
+.social-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }

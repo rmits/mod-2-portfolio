@@ -42,7 +42,7 @@ nav a {
 nav a::before {
     content: '🎐';
     display: inline-block;
-    margin: 2px;
+    margin: 20px 0px;
 }
 
 .card-container {
@@ -79,8 +79,40 @@ nav a::before {
     text-align: left;
 }
 
+.work-sub-card {
+    border: 10px solid var(--alt);
+    background-color: black;
+}
+
+.work-sub-card h2 {
+    background-color: black;
+}
+
+.work-sub-card img :hover {
+  color: white;
+  opacity: 0.5;
+}
+
+.contact-card {
+    text-align: center;
+    margin: 10px 0px;
+    color: var(--light);
+}
+
+.contact-card h2 {
+    background-color: var(--alt);
+    margin: 5px 100px;
+}
+
 .social-card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--light);
+    margin: 5px;
 }

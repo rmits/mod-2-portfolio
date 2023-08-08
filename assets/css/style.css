@@ -27,12 +27,13 @@ header {
 
 h1 {
     font-size: 40px;
+    text-align: center;
 }
+
 nav ul {
     display: flex;
     color: var(--light);
     justify-content: space-between;
-    min-width: 400px;
     display: flex;
     font-weight: bold;
     list-style-type: none;
